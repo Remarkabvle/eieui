@@ -1,0 +1,158 @@
+.process {
+    padding: 80px 0;
+    background: #DCEAF5;
+
+    &__container {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__left,
+    &__right {
+        width: calc(50% - 30px);
+    }
+
+    &__avatar {
+        display: flex;
+        align-items: center;
+
+        p {
+            padding-left: 20px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+
+    &__title {
+        padding: 24px 0;
+        font-size: 64px;
+        line-height: 72px;
+        color: $primaryCl;
+    }
+
+    &__desc {
+        font-size: 18px;
+        line-height: 36px;
+        color: $primaryCl;
+        opacity: 0.9;
+    }
+
+    &__link {
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        color: orange;
+    }
+
+    &__right {
+        img {
+            width: 100%;
+        }
+    }
+}
+.overall__link{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    color: orange;
+}
+
+@media (max-width:1250px) {
+    .process {
+        &__title {
+            font-size: 40px;
+            line-height: 45px;
+        }
+
+        &__link {
+            padding-top: 15px;
+        }
+    }
+}
+
+@media (max-width:1120px) {
+    .process {
+        &__avatar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+
+            p {
+                padding-left: 8px;
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .process {
+        &__title {
+            padding: 15px 0;
+            font-size: 28px;
+            line-height: 30px;
+        }
+
+        &__desc {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__link {
+            padding-top: 8px;
+        }
+    }
+}
+
+@media (max-width:750px) {
+    .process {
+        padding: 20px;
+
+        &__container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+
+        &__left,
+        &__right {
+            width: 100%;
+        }
+
+    }
+}
+
+@media (max-width:400px) {
+    .process {
+        &__title {
+            padding: 10px 0;
+            font-size: 20px;
+            line-height: 22px;
+        }
+
+        &__desc {
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        &__link {
+            padding-top: 8px;
+        }
+        &__avatar {
+            p {
+                padding-left: 5px;
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+}
